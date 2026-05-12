@@ -75,6 +75,7 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
                   "https://moveo-frontend-0sbk.onrender.com",
+                  "https://pflavor-frontend-git-main-andreowsp-1757s-projects.vercel.app",
                   "http://localhost:5173",
                   "http://localhost:3000")
               .AllowAnyHeader()
