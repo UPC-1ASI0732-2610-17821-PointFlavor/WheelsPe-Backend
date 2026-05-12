@@ -73,11 +73,18 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy(corsPolicyName, policy =>
     {
-        policy.WithOrigins(
-                  "https://moveo-frontend-0sbk.onrender.com",
-                  "https://pflavor-frontend-git-main-andreowsp-1757s-projects.vercel.app",
-                  "http://localhost:5173",
-                  "http://localhost:3000")
+        policy.SetIsOriginAllowed(origin =>
+              {
+                  if (string.IsNullOrWhiteSpace(origin))
+                      return false;
+                  if (origin == "https://moveo-frontend-0sbk.onrender.com")
+                      return true;
+                  if (origin == "https://pflavor-frontend-git-main-andreowsp-1757s-projects.vercel.app")
+                      return true;
+                  if (origin.StartsWith("http://localhost:", StringComparison.OrdinalIgnoreCase))
+                      return true;
+                  return origin.EndsWith(".vercel.app", StringComparison.OrdinalIgnoreCase);
+              })
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
