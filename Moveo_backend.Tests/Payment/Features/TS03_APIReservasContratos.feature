@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: TS03 - API de Reservas y Contratos
   Como Developer
   Necesito gestionar reservas y contratos vía API

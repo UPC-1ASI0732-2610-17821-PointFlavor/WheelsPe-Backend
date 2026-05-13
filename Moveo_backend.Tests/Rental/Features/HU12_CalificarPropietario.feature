@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU12 - Calificar al propietario después del alquiler
   Como inquilino
   Quiero dejar una reseña sobre mi experiencia

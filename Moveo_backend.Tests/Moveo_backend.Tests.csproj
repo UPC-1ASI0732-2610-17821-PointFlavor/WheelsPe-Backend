@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
@@ -21,6 +21,18 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <!-- BDD -->
+    <PackageReference Include="Reqnroll.xUnit" Version="2.3.0" />
+    <!-- Integration Tests -->
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="BDD/**/*.feature">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <!-- Exclude pre-existing feature files from Reqnroll code generation -->
+    <ReqnrollFeature Remove="IAM\**\*.feature;Rental\**\*.feature;Payment\**\*.feature;UserManagement\**\*.feature" />
   </ItemGroup>
 
   <ItemGroup>

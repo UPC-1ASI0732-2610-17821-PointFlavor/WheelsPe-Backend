@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU14 - Liberar pago al propietario tras devolución
   Como sistema
   Debo liberar el pago al propietario solo tras confirmar la devolución del auto en buen estado

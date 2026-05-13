@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU06 - Registrarse como inquilino
   Como inquilino
   Quiero registrarme en la plataforma

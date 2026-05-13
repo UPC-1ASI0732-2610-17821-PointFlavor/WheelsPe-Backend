@@ -33,7 +33,7 @@ public class AuthServiceTests
     {
         _hashingServiceMock.Setup(h => h.HashPassword("Pass123!")).Returns("hashed");
 
-        var command = new RegisterCommand("Juan", "García", "juan@example.com", "Pass123!", null, null, null, "tenant");
+        var command = new RegisterCommand("Juan", "García", "juan@example.com", "Pass123!", Role: "tenant");
 
         var result = await _authService.RegisterAsync(command);
 

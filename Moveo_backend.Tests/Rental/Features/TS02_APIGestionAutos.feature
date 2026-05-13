@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: TS02 - API de Gestión de Autos
   Como Developer
   Quiero endpoints para crear, leer, actualizar y eliminar autos

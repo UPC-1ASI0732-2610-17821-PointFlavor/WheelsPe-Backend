@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU07 - Publicar un vehículo
   Como propietario
   Quiero publicar mi auto

@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: TS01 - API de Autenticación (Login/Register)
   Como Developer
   Necesito una API para login y registro de usuarios

@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU13 - Generar contrato digital automático
   Como sistema
   Debo generar un contrato digital al confirmar la reserva

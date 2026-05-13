@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU11 - Reservar un auto con pago seguro
   Como inquilino
   Quiero reservar un auto y realizar el pago de forma segura

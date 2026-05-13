@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU05 - Registrarse como propietario
   Como propietario
   Quiero registrarme en la plataforma

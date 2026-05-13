@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU10 - Filtrar autos por ubicación y fecha
   Como inquilino
   Quiero buscar autos disponibles en mi zona y en las fechas que necesito

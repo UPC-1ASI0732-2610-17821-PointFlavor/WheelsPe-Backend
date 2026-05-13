@@ -1,4 +1,4 @@
-# language: es
+@ignore
 Feature: HU15 - Verificar identidad con DNI y selfie
   Como sistema
   Debo verificar la identidad del usuario con DNI y selfie
